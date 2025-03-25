@@ -54,7 +54,7 @@ export async function POST(req: Request) {
     const { id, email_addresses, image_url, first_name, last_name } = evt.data;
 
     const data = {
-      name: `${first_name} ${last_name}}`.trim(),
+      name: `${first_name} ${last_name}`.trim(),
       email: email_addresses[0].email_address,
       clerkUserId: id,
       imageUrl: image_url,
@@ -65,7 +65,7 @@ export async function POST(req: Request) {
     const { id, email_addresses, image_url, first_name, last_name } = evt.data;
 
     const data = {
-      name: `${first_name} ${last_name}}`.trim(),
+      name: `${first_name} ${last_name}`.trim(),
       email: email_addresses[0].email_address,
       imageUrl: image_url,
     };
